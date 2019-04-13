@@ -21,6 +21,8 @@
 # MA 02111-1307 USA
 #
 
+include $(SCRIPTS_DIR)/toolchains.mk
+
 VERSION = 1
 PATCHLEVEL = 1
 SUBLEVEL = 6
@@ -158,8 +160,8 @@ endif
 endif
 endif
 
-CROSS_COMPILE = /usr/local/arm/4.3.2/bin/arm-linux-
-export	CROSS_COMPILE
+$(warning "CROSS_COMPILE=$(CROSS_COMPILE)")
+export CROSS_COMPILE
 
 # load other configuration
 include $(TOPDIR)/config.mk

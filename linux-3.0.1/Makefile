@@ -1,3 +1,5 @@
+include $(SCRIPTS_DIR)/toolchains.mk
+
 VERSION = 3
 PATCHLEVEL = 0
 SUBLEVEL = 1
